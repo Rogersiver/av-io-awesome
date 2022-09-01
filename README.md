@@ -1,6 +1,6 @@
-# **TAXONOMY**
+# **av-io-awesome**
 
-> This list is heavily inspired by https://github.com/sindresorhus/awesome and the various "awesome-_______" lists around the development community. This is not intended to be comprehensive. I am only putting products on this list that I have used and feel comfortable recommending to strangers. Thank you!
+> This list is heavily inspired by https://github.com/sindresorhus/awesome and the various "awesome-_______" lists around the development community. This is not intended to be comprehensive. I am only putting products on this list that I have used and feel comfortable recommending to strangers. Also, most of these products are on the "Pro-Sumer" level. Big price-tag, large production tools such as Notch and Green Hippo have been omitted from this list as I do not have experience with them.
 
 
 ## **GENERAL RESOURCES**
@@ -60,7 +60,13 @@
 - [**Bome Midi-Translator**](https://www.bome.com/products/miditranslator) - a versatile MIDI mapping, processing, and scripting tool. Create custom MIDI routings, rules, logic, layers. And with keystroke and mouse emulation, you can control any software on your computer using a MIDI controller. 🍎🪟💵
 - [**LoopMIDI**](https://www.tobias-erichsen.de/software/loopmidi.html) - Software that can be used to create virtual loopback MIDI-ports to interconnect applications on Windows that want to open hardware-MIDI-ports for communication. 🪟🆓
 - [**LoopBe**](https://nerds.de/en/loopbe1.html) - LoopBe1 is an internal MIDI device for transferring MIDI data between computer programs. Basically LoopBe1 is an "invisible cable" to connect a MIDI outport of an application to any other application´s MIDI inport. 🍎🪟💵
-### ***Utility***
+
+### ***MICROCONTROLERS AND SENSORS***
+- [**PlatformIO** again](https://platformio.org/) - is a professional collaborative platform for embedded development
+    - [PlatformIO Vscode Tutorial](https://maker.pro/arduino/tutorial/how-to-use-platformio-in-visual-studio-code-to-program-arduino)
+- [**AUnit**](https://github.com/bxparks/AUnit#BooleanAssertions) Unit testing framework for Arduino platforms - inspired by ArduinoUnit and Google Test. Used with EpoxyDuino for continuous builds.
+
+### ***UTILITIES***
 - [**Tobias-Erichsen Tools**](https://www.tobias-erichsen.de/software.html) - Creator of LoopMidi. Tobias Erichsen has created amazingly useful network midi drivers, virtual midi port drivers, loopMidi itself, as well as other tools. 🍎🪟🐧📱🆓
 - [**Protokol**](https://hexler.net/protokol) - Prokotol is a new utility by Hexler for the creator's toolbox: A lightweight, responsive console app for monitoring and logging control protocols. 💯🆓
 - [**MidiView**](https://hautetechnique.com/midi/midiview/) - MidiView is a simple MIDI Monitor app to that shows bi-directional MIDI packages that flows through your machine. - 🍎🪟🆓
@@ -75,12 +81,14 @@
         - The DMX Pro can handle RDM and the Standard uses the Open-DMX format over FTDI
 - [**Chamsys**](https://chamsyslighting.com/products/magicdmx-full) - USB dongle necessary to unlock full MagicQ software without console. Offers full suite of software, usb solutions, midi solution, and consoles.
 - [**Elation Onyx**](https://obsidiancontrol.com/) - Formerly Martin MPC. Offers full suit of dingles, dongles, consoles, software, and wings. Cheaper competitor to Chamsys, but less user friendly.
-- Utilities & Artnet
+- [**City Theatrical**](https://www.citytheatrical.com/)
+- [**SanDevices**](https://sandevices.com/) - SanDevices RGB LED pixel controllers are used by Holiday Displays, Night Clubs, Broadway and other Stage Lighting, Architectural  Lighting, Amusement and Theme Parks, Mardi Gras Floats and Burning Man Vehicles.
+- [**Madrix**](https://www.madrix.com/products) - Extremely powerful pixel drivers
+
 
 ### ***Audio***
-- [**MOTU**]() - 
-- [**Tiny USB Audio Interface**]() - 
-- Other Recs include Apollo, Focusrite, RME, and SSL. 
+- [**Best Tiny USB Audio Interface**](https://www.amazon.com/Sabrent-External-Adapter-Windows-AU-MMSA/dp/B00IRVQ0F8/ref=sr_1_6?crid=3VRER9HK0MW3H&keywords=small+usb+audio+adapter&qid=1662004506&sprefix=small+usb+audio+adapter%2Caps%2C61&sr=8-6)
+- Brand Recs MOTU Apollo, Focusrite, RME, and SSL. 
 
 ### ***Video***
 
@@ -103,19 +111,31 @@
     - Audio Extractor
     - Raspberry Pi tools
     - BrightSigns
+    - Couplers
 
 ### ***MIDI***
 - [**iConnectivity Midi Devices**](https://www.iconnectivity.com/midi-interfaces-1)
+
+### ***EMBEDDED DEVICES***
+- [**Teensy USB**](https://www.pjrc.com/teensy/) - The Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port.
+    -   *Can operate as CC MidiUSB device out of the box*
+- [**Puck JS**](https://www.puck-js.com/) - 
+The ground-breaking bluetooth beacon - An Open Source JavaScript microcontroller you can program and debug wirelessly.
+- [**Arduino**](https://www.arduino.cc/) - Arduino is an open-source electronics platform based on easy-to-use hardware and software. It's intended for anyone making interactive projects.
+- [**STM32**](https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html) - STM32 is a family of 32-bit microcontroller integrated circuits by STMicroelectronics. 
+    - For more industrial purpose requires deeper knowledge
+- [**Raspberry Pi Pico**](https://www.raspberrypi.com/products/raspberry-pi-pico/) - Raspberry Pi Pico is a tiny, fast, and versatile board built using RP2040, the flagship microcontroller chip designed by Raspberry Pi in the UK
+    - Can run micro/circuitPython, has live shell on embedded to upload code and debug.
 
 ---
 
 ## **CODE**
 
 ### ***Lighting***
-- [**OLA**]() - The Open Lighting Architecture is a framework for lighting control information. It supports a range of protocols and over a dozen USB devices. It can run as a standalone service, which is useful for converting signals between protocols, or alternatively using the OLA API, it can be used as the backend for lighting control software. OLA runs on many different platforms including ARM, which makes it a perfect fit for low cost Ethernet to DMX gateways. - 🍓💯🆓
+- [**OLA**](https://www.openlighting.org/ola/) - The Open Lighting Architecture is a framework for lighting control information. It supports a range of protocols and over a dozen USB devices. It can run as a standalone service, which is useful for converting signals between protocols, or alternatively using the OLA API, it can be used as the backend for lighting control software. OLA runs on many different platforms including ARM, which makes it a perfect fit for low cost Ethernet to DMX gateways. - 🍓💯🆓
 ###  ***Audio***
 - [**Pygame Audio Mixer**](https://www.pygame.org/docs/ref/mixer.html) (*Python*) - pygame module for loading and playing sounds
-- [**Mingus**](https://github.com/chimezie/python3-mingus) (*Python*) - mingus is a package for Python used by programmers, musicians, composers and researchers to make and analyse music.
+
 - [**Sonic Pi**](https://sonic-pi.net/) - Sonic Pi is a code-based music creation and performance tool.
 
 - [**OF Sound module**](https://openframeworks.cc/documentation/sound/) (*C++*) - Load and playback sound files through ofSoundPlayer Read and write sound directly from/to the sound card with ofSoundStream
@@ -126,7 +146,8 @@
 - [**openFrameworks**](https://openframeworks.cc/) (*C++*) - openFrameworks is an open source toolkit for creative coding.
 - [**vvvv**](https://vvvv.org/) - (*OpenGL/Node Based*)	- vvvv is a visual live-programming environment for easy prototyping and development. It is designed to facilitate the handling of large media environments with physical interfaces, real-time motion graphics, audio and video that can interact with many users simultaneously.
 - [**PureData**](https://puredata.info/) - (*OpenGL/Node Based*) - Pure Data (or just "Pd") is an open source visual programming language for multimedia.  -
-- [**Touchdesigner** *again*]() - -
+- [**Touchdesigner** *again*]()
+- [**nannou**](https://nannou.cc/) - An open-source creative-coding framework for Rust
 ### ***Libraries***
 - **Python**
     - Mido
@@ -142,24 +163,6 @@
 - [**Melrose**](https://xn--melrse-egb.org/) - a MIDI producing environment for creating (live) music.
 - [**IBINIZ**](http://countercomplex.blogspot.com/2011/12/ibniz-hardcore-audiovisual-virtual.html) - a hardcore audiovisual virtual machine and an esoteric programming language
 - [**ORCA**](https://github.com/hundredrabbits/Orca) - an esoteric programming language designed to quickly create procedural sequencers, in which every letter of the alphabet is an operation, where lowercase letters operate on bang, uppercase letters operate each frame.
-
-----
-
-## **MICROCONTROLLERS + SENSORS**
-
-### ***Devices***
-- [**Teensy USB**](https://www.pjrc.com/teensy/) - The Teensy is a complete USB-based microcontroller development system, in a very small footprint, capable of implementing many types of projects. All programming is done via the USB port.
-- [**Puck JS**](https://www.puck-js.com/) - 
-The ground-breaking bluetooth beacon - An Open Source JavaScript microcontroller you can program and debug wirelessly.
-- [**Arduino**](https://www.arduino.cc/) - Arduino is an open-source electronics platform based on easy-to-use hardware and software. It's intended for anyone making interactive projects.
-- [**STM32**](https://www.st.com/en/microcontrollers-microprocessors/stm32-32-bit-arm-cortex-mcus.html) - STM32 is a family of 32-bit microcontroller integrated circuits by STMicroelectronics. 
-- [**Raspberry Pi Pico**](https://www.raspberrypi.com/products/raspberry-pi-pico/) - Raspberry Pi Pico is a tiny, fast, and versatile board built using RP2040, the flagship microcontroller chip designed by Raspberry Pi in the UK
-
-### ***MISC***
-- [**PlatformIO** again](https://platformio.org/) - is a professional collaborative platform for embedded development
-    - [PlatformIO Vscode Tutorial](https://maker.pro/arduino/tutorial/how-to-use-platformio-in-visual-studio-code-to-program-arduino)
-- [**AUnit**](https://github.com/bxparks/AUnit#BooleanAssertions) Unit testing framework for Arduino platforms - inspired by ArduinoUnit and Google Test. Used with EpoxyDuino for continuous builds.
-
 ---
 
 ## **PROTOCOLS/DRIVERS**
@@ -188,7 +191,7 @@ The ground-breaking bluetooth beacon - An Open Source JavaScript microcontroller
 
 ---
 
-## **USEFUL LINKS**
+## **MORE USEFUL STUFF**
 
 ### *Arduino Midi Stuff*
 - [MIDI Library](https://www.pjrc.com/teensy/td_libs_MIDI.html)
@@ -196,6 +199,6 @@ The ground-breaking bluetooth beacon - An Open Source JavaScript microcontroller
 - [MIDI Note Player Arduino Documentation](https://docs.arduino.cc/-built-in-examples/communication/Midi)
 - [Allow for multiple virtual MIDI cables (ports) · Issue #43 · arduino-libraries/MIDIUSB](https://github.com/arduino-libraries/MIDIUSB/issues/43)
 
-## FUTURE SECTIONS
+## FUTURE ADDITIONS TO LIST
 - Books & PDFs
 - Problem Solving forum threads/online tutorials
