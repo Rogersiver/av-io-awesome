@@ -148,12 +148,15 @@ The ground-breaking bluetooth beacon - An Open Source JavaScript microcontroller
 - [**PureData**](https://puredata.info/) - (*OpenGL/Node Based*) - Pure Data (or just "Pd") is an open source visual programming language for multimedia.  -
 - [**Touchdesigner** *again*]()
 - [**nannou**](https://nannou.cc/) - An open-source creative-coding framework for Rust
-### ***Libraries***
+### ***Useful Libraries***
 - **Python**
     - Mido
     - py-osc
     - pygame
-    - p5
+    - io
+    - asyncio
+    - pickle/shelve
+   
 - **NodeJS**
     - p5js
     - midi/easymidi
